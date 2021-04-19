@@ -1,0 +1,20 @@
+[
+    {
+        "name": "pg-default",
+        "type": "postgres",
+        "host": "127.0.0.1",
+        "port": 5432,
+        "username": "jonathan",
+        "password": "12345678",
+        "database": "wom",
+        "entities": [
+            "./src/models/**/*.ts"
+        ],
+        "migrations": [
+            "./src/migrations/*.ts"
+        ],
+        "cli": {
+            "migrationsDir": "./src/migrations/"
+        }
+    }
+]
